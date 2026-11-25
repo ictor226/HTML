@@ -79,4 +79,104 @@ function fnDesfazerAcao(lista, listaAcao){
 
  fnDesfazerAcao(listAcao)
 
+// ------------------------------------------------------------------------------------------------
+function fnDesfazerAcao(lista) {
+
+  // pop remove o último elemento do array
+  lista.pop();
+
+  // Mostra a lista atualizada no terminal
+  console.log(lista);
+}
+
+// Criando o array inicial e chamando a função
+let listAcao = ["Escreveu título", "Aplicou negrito", "Inseriu tabela"];
+
+fnDesfazerAcao(listAcao);
+
+// ----------------------------------------------------------------------------------
+function fnVerificarEstoque(lista) {
+
+  // length verifica a quantidade total de elementos do array
+  console.log("Quantidade total de itens no estoque: " + lista.length);
+}
+
+// Criando o array inicial e chamando a função
+let estoque = ["Camiseta", "Calça", "Tênis", "Boné"];
+
+fnVerificarEstoque(estoque);
+
+// ----------------------------------------------------------------------------------
+function fnEstaNaLista(lista, nome) {
+
+  // includes verifica se o nome existe dentro do array
+  let verificar = lista.includes(nome);
+
+  // Exibe o resultado da consulta
+  console.log(nome + " está na lista? " + verificar);
+}
+
+// Criando o array inicial e chamando a função
+let convidados = ["Lucas", "Mariana", "Thiago", "Beatriz"];
+
+fnEstaNaLista(convidados, "Mariana");
+fnEstaNaLista(convidados, "Rafael");
+
+// ----------------------------------------------------------------------------------
+function fnConsultarCorredor(lista, item) {
+
+  // indexOf procura a posição do item dentro do array
+  let posicao = lista.indexOf(item);
+
+  // Verifica se o item foi encontrado
+  if (posicao !== -1) {
+
+    // Mostra a posição encontrada
+    console.log(item + " está na posição: " + posicao);
+
+  } else {
+
+    // Mostra um aviso caso o item não exista no array
+    console.log(item + " não está no array");
+  }
+}
+
+// Criando o array inicial e chamando a função
+let corredor = ["Arroz", "Feijão", "Açúcar", "Café", "Sal"];
+
+fnConsultarCorredor(corredor, "Café");
+fnConsultarCorredor(corredor, "Macarrão");
+
+// ----------------------------------------------------------------------------------
+function fnAtualizarPreco(lista, indice, novoValor) {
+
+  // Altera o valor do array na posição informada
+  lista[indice] = novoValor;
+
+  // Mostra o array com o preço atualizado no terminal
+  console.log(lista);
+}
+
+// Criando o array inicial e chamando a função
+let precos = [15.00, 25.00, 40.00];
+
+fnAtualizarPreco(precos, 1, 28.50);
+
+// ----------------------------------------------------------------------------------
+function fnCriarBoletim(nota1, nota2, nota3) {
+
+  // Cria um array armazenando as três notas do estudante
+  let boletim = [nota1, nota2, nota3];
+
+  // Mostra o boletim no terminal
+  console.log(boletim);
+}
+
+// Chamando a função para testar
+fnCriarBoletim(8.0, 7.5, 9.0);
+
+// ----------------------------------------------------------------------------------
+
+
+
 
