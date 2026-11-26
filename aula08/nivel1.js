@@ -75,9 +75,9 @@ function fnDesfazerAcao(lista, listaAcao){
   console.log(lista);
  }
 
- let listAcao = ["Escreveu título", "Aplicou negrito", "Inseriu tabela",]
+ let listAcao1 = ["Escreveu título", "Aplicou negrito", "Inseriu tabela",]
 
- fnDesfazerAcao(listAcao)
+ fnDesfazerAcao(listAcao1)
 
 // ------------------------------------------------------------------------------------------------
 function fnDesfazerAcao(lista) {
